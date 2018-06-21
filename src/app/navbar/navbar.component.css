@@ -1,6 +1,7 @@
 .mdl-layout__header {
     background-color: #616260;
     height: 37px;
+    margin-bottom: 37px;
 }
 
 .mdl-layout__tab {
@@ -8,6 +9,22 @@
   line-height: 37px;
   color: #cacaca;
 }
+
+.mdl-layout__tab-bar > .custom-tab {
+
+      display: inline-block;
+      display: -moz-inline-box;
+      *display: inline;
+      /* For IE7 */
+
+      zoom: 1;
+      /* Trigger hasLayout */
+
+      width: 33%;
+      text-align: center;
+
+}
+
 .mdl-layout__tab:hover {
   color: #ededed;
 }
