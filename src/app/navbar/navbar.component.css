@@ -1,0 +1,26 @@
+.mdl-layout__header {
+    background-color: #616260;
+    height: 37px;
+}
+
+.mdl-layout__tab {
+  height: 37px;
+  line-height: 37px;
+  color: #cacaca;
+}
+.mdl-layout__tab:hover {
+  color: #ededed;
+}
+
+.mdl-layout__tab-bar {
+    background-color: #969695;
+    max-height: 37px;
+}
+
+:host ::ng-deep .mdl-layout__tab-bar-container {
+    height: 37px;
+}
+
+:host ::ng-deep .mdl-layout.is-upgraded .mdl-layout__tab.is-active {
+  color: #fff;
+}
