@@ -1,1 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
+
+/* some reserved background image */
+/* body {
+    background-size: 50px 50px;
+    background-image: radial-gradient(circle, #a7a8a7 1px, rgba(0, 0, 0, 0) 1px);
+} */
+
+/* body {
+  background-size: 50px 50px;
+  background-image: linear-gradient(to right, #ededed 1px, transparent 1px),
+  linear-gradient(to bottom, #ededed 1px, transparent 1px);
+} */
+
+/* body {
+  background: linear-gradient(-90deg, rgba(0, 0, 0, .02) 1px, transparent 1px), linear-gradient(rgba(0, 0, 0, .02) 1px, transparent 1px), linear-gradient(-90deg, rgba(0, 0, 0, .02) 1px, transparent 1px), linear-gradient(rgba(0, 0, 0, .02) 1px, transparent 1px), linear-gradient(transparent 3px, #f2f2f2 3px, #f2f2f2 78px, transparent 78px), linear-gradient(-90deg, #aaa 1px, transparent 1px), linear-gradient(-90deg, transparent 3px, #f2f2f2 3px, #f2f2f2 78px, transparent 78px), linear-gradient(#aaa 1px, transparent 1px), #f2f2f2;
+  background-size: 4px 4px, 4px 4px, 80px 80px, 80px 80px, 80px 80px, 80px 80px, 80px 80px, 80px 80px;
+} */
