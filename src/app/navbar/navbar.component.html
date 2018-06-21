@@ -7,29 +7,38 @@
     </div>
     <!-- Tabs -->
     <div class="mdl-layout__tab-bar mdl-js-ripple-effect">
-      <a href="#fixed-tab-1" class="mdl-layout__tab is-active">Problem Sets</a>
-      <a href="#fixed-tab-2" class="mdl-layout__tab">Community</a>
-      <a href="#fixed-tab-3" class="mdl-layout__tab">Tab 3</a>
+      <div [routerLink]="['/']" class="custom-tab">
+        <a href="#fixed-tab-1" class="mdl-layout__tab is-active">Problem Sets</a>
+      </div>
+      <div [routerLink]="['/community']" class="custom-tab">
+        <a href="#fixed-tab-2" class="mdl-layout__tab">Community</a>
+      </div>
+      <div class="custom-tab">
+        <a href="#fixed-tab-3" class="mdl-layout__tab">Tab 3</a>
+      </div>
     </div>
   </header>
   <div class="mdl-layout__drawer">
     <span class="mdl-layout-title">Title</span>
   </div>
   <main class="mdl-layout__content">
+    <!-- This is just for the effect, (need to split router outlet) - start -->
     <section class="mdl-layout__tab-panel is-active" id="fixed-tab-1">
       <div class="page-content">
-        <!-- Your content goes here -->
+
       </div>
     </section>
     <section class="mdl-layout__tab-panel" id="fixed-tab-2">
       <div class="page-content">
-        <!-- Your content goes here -->
+
       </div>
     </section>
     <section class="mdl-layout__tab-panel" id="fixed-tab-3">
       <div class="page-content">
-        <!-- Your content goes here -->
+
       </div>
     </section>
+    <!-- This is just for the effect - end -->
+    <router-outlet></router-outlet>
   </main>
 </div>
