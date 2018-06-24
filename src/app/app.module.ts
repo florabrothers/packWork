@@ -7,13 +7,15 @@ import { WorkbenchComponent } from './workbench/workbench.component';
 import { CommunityComponent } from './community/community.component';
 
 import { AppRoutes } from './app.routes';
+import { ProblemComponent } from './workbench/problems/problem/problem.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     WorkbenchComponent,
-    CommunityComponent
+    CommunityComponent,
+    ProblemComponent
   ],
   imports: [
     BrowserModule,
