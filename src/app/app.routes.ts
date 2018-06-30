@@ -9,6 +9,10 @@ const routes: Routes = [
         component: WorkbenchComponent
     },
     {
+        path: 'problems',
+        component: WorkbenchComponent
+    },
+    {
         path: 'community',
         component: CommunityComponent
     }

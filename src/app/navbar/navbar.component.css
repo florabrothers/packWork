@@ -1,5 +1,5 @@
 .mdl-layout__header {
-    background-color: #616260;
+    background-color: #B5B5B5;
     height: 37px;
     margin-bottom: 37px;
 }
@@ -17,9 +17,6 @@
       *display: inline;
       /* For IE7 */
 
-      zoom: 1;
-      /* Trigger hasLayout */
-
       width: 33%;
       text-align: center;
 
@@ -30,7 +27,7 @@
 }
 
 .mdl-layout__tab-bar {
-    background-color: #969695;
+    background-color: #969696;
     max-height: 37px;
 }
 
