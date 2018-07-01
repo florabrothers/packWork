@@ -1,5 +1,5 @@
 .mdl-layout__header {
-    background-color: #B5B5B5;
+    background-color: #6a7481;
     height: 37px;
     margin-bottom: 37px;
 }
@@ -7,7 +7,7 @@
 .mdl-layout__tab {
   height: 37px;
   line-height: 37px;
-  color: #cacaca;
+  color: #e9eaed;
 }
 
 .mdl-layout__tab-bar > .custom-tab {
@@ -23,11 +23,11 @@
 }
 
 .mdl-layout__tab:hover {
-  color: #ededed;
+  color: #fff;
 }
 
 .mdl-layout__tab-bar {
-    background-color: #969696;
+    background-color: #a8afb8;
     max-height: 37px;
 }
 
