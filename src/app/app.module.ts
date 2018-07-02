@@ -8,6 +8,8 @@ import { CommunityComponent } from './community/community.component';
 
 import { AppRoutes } from './app.routes';
 import { ProblemComponent } from './workbench/problems/problem/problem.component';
+import { ClarityModule } from '@clr/angular';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,9 @@ import { ProblemComponent } from './workbench/problems/problem/problem.component
   ],
   imports: [
     BrowserModule,
-    AppRoutes
+    AppRoutes,
+    ClarityModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
