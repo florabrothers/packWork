@@ -7,13 +7,13 @@
     </div>
     <!-- Tabs -->
     <div class="mdl-layout__tab-bar mdl-js-ripple-effect">
-      <div routerLink="/problems" routerLinkActive #rlap="routerLinkActive" class="custom-tab">
+      <div routerLink="/problems" routerLinkActive #rlap="routerLinkActive" class="custom-tab active-colour-p">
         <a href="#fixed-tab-1" class="mdl-layout__tab" [ngClass]="rlap.isActive?'is-active':''">Problem Sets</a>
       </div>
-      <div routerLink="/community" routerLinkActive #rlac="routerLinkActive" class="custom-tab">
+      <div routerLink="/community" routerLinkActive #rlac="routerLinkActive" class="custom-tab active-colour-c">
         <a href="#fixed-tab-2" class="mdl-layout__tab" [ngClass]="rlac.isActive?'is-active':''">Community</a>
       </div>
-      <div class="custom-tab">
+      <div class="custom-tab active-colour-t">
         <a href="#fixed-tab-3" class="mdl-layout__tab">Tab 3</a>
       </div>
     </div>

@@ -1,5 +1,5 @@
 .mdl-layout__header {
-    background-color: #838383;
+    background-color: #4b4b4b;
     height: 37px;
     margin-bottom: 37px;
 }
@@ -17,13 +17,13 @@
       *display: inline;
       /* For IE7 */
 
-      width: 33%;
+      width: 33.4%;
       text-align: center;
 
 }
 
 .mdl-layout__tab:hover {
-  color: #838383;
+  color: #4b4b4b;
   text-decoration: none;
 }
 
@@ -36,7 +36,19 @@
     height: 37px;
 }
 
-:host ::ng-deep .mdl-layout.is-upgraded .mdl-layout__tab.is-active {
+:host ::ng-deep .mdl-layout__tab.is-active {
   color: #fff;
-  background-color: #838383;
+  background-color: #4b4b4b;
+}
+
+:host ::ng-deep .active-colour-p .mdl-layout__tab.is-active::after {
+  background-color: #ff4d4d;
+}
+
+:host ::ng-deep .active-colour-c .mdl-layout__tab.is-active::after {
+  background-color: #3ae374;
+}
+
+:host ::ng-deep .active-colour-t .mdl-layout__tab.is-active::after {
+  background-color: #fff200;
 }
