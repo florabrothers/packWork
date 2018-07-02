@@ -6,7 +6,8 @@ import { CommunityComponent} from './community/community.component';
 const routes: Routes = [
     {
         path: '',
-        component: WorkbenchComponent
+        redirectTo: '/problems',
+        pathMatch: 'full'
     },
     {
         path: 'problems',
@@ -15,7 +16,11 @@ const routes: Routes = [
     {
         path: 'community',
         component: CommunityComponent
-    }
+    },
+    // {
+    //     path: 'sets',
+    //     component: CommunityComponent
+    // }
 ];
 
 export const AppRoutes = RouterModule.forRoot(routes);

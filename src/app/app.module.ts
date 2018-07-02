@@ -10,6 +10,7 @@ import { AppRoutes } from './app.routes';
 import { ProblemComponent } from './workbench/problems/problem/problem.component';
 import { ClarityModule } from '@clr/angular';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { SetsComponent } from './workbench/sets/sets.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     NavbarComponent,
     WorkbenchComponent,
     CommunityComponent,
-    ProblemComponent
+    ProblemComponent,
+    SetsComponent
   ],
   imports: [
     BrowserModule,
