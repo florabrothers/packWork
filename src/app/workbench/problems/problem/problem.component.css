@@ -6,3 +6,7 @@
     box-shadow: 0 0.125rem 0 0 #4b4b4b;
     border: 1px solid #4b4b4b;
 }
+
+a {
+    text-decoration: none;
+}
