@@ -1,18 +1,51 @@
-<button (click)="lgOpen = true" class="btn">Testing use</button>
+<div class="frame">
+  <!-- <button (click)="lgOpen = true" class="btn">Testing use</button> -->
+  <!-- if going for one page form then md would be better -->
+  <clr-wizard #wizardlg [(clrWizardOpen)]="open" clrWizardSize="md" [clrWizardClosable]="false">
+    <clr-wizard-title>Large-Sized Wizard</clr-wizard-title>
 
+    <clr-wizard-button [type]="'cancel'">Cancel</clr-wizard-button>
+    <clr-wizard-button [type]="'previous'">Back</clr-wizard-button>
+    <clr-wizard-button [type]="'next'">Next</clr-wizard-button>
+    <clr-wizard-button [type]="'finish'">Finish</clr-wizard-button>
 
+    <clr-wizard-page>
+      <form>
+        <clr-stack-view>
+          <ng-template clrPageTitle>Page</ng-template>
+          <!-- need to disable the expandable before coating with the onclick function -->
+          <clr-stack-block #firstBlock (click)="openFirst()" [clrSbExpandable]="false">
+            <clr-stack-label class="labelx">
+              <clr-icon shape="new" class="icon is-solid" *ngIf="this.modelNew.content1 != '' " [@slideInOut]> </clr-icon>
+              Label</clr-stack-label>
+            <div class="addition">
+              {{ modelNew.content1 }}
+            </div>
+            <clr-stack-content class="contentx" *ngIf="this.modelNew.content1 === '' ">{{ this.model.content1 }}</clr-stack-content>
 
-<clr-wizard #wizardlg [(clrWizardOpen)]="lgOpen" clrWizardSize="lg">
-  <clr-wizard-title>Large-Sized Wizard</clr-wizard-title>
+            <clr-stack-block>
+              <clr-stack-label class="labelx">Modify</clr-stack-label>
+              <clr-stack-content class="contentx">
+                <input type="text" [(ngModel)]="modelNew.content1" name="content1" class="first-input">
+              </clr-stack-content>
+            </clr-stack-block>
+          </clr-stack-block>
 
-  <clr-wizard-button [type]="'cancel'">Cancel</clr-wizard-button>
-  <clr-wizard-button [type]="'previous'">Back</clr-wizard-button>
-  <clr-wizard-button [type]="'next'">Next</clr-wizard-button>
-  <clr-wizard-button [type]="'finish'">Finish</clr-wizard-button>
+          <clr-stack-block #secondBlock (click)="openSecond()" [clrSbExpandable]="false">
+            <clr-stack-label class="labelx">Label</clr-stack-label>
+            <clr-stack-content class="contentx">{{ this.model.content2 }}</clr-stack-content>
 
-  <clr-wizard-page>
-    <ng-template clrPageTitle>Page 1</ng-template>
-    ...
-  </clr-wizard-page>
+            <clr-stack-block>
+              <clr-stack-label class="labelx">Modify</clr-stack-label>
+              <clr-stack-content class="contentx">
+                <input type="text" [(ngModel)]="modelNew.content2" name="content2" class="second-input">
+              </clr-stack-content>
+            </clr-stack-block>
+          </clr-stack-block>
 
-</clr-wizard>
+        </clr-stack-view>
+      </form>
+    </clr-wizard-page>
+
+  </clr-wizard>
+</div>

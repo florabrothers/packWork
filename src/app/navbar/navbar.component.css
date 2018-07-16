@@ -52,3 +52,9 @@
 :host ::ng-deep .active-colour-t .mdl-layout__tab.is-active::after {
   background-color: #fff200;
 }
+
+:host ::ng-deep .mdl-layout__container {
+  max-height: 101px;
+  position: absolute;
+  top: 0;
+}

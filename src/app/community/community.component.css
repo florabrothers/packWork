@@ -1,0 +1,40 @@
+.frame {
+  margin: 0 10px 0 10px;
+  padding-top: 101px;
+}
+
+:host ::ng-deep .stack-view {
+  height: auto;
+}
+
+.labelx {
+  float: right;
+  text-align: right;
+}
+
+:host ::ng-deep .clr-wizard.wizard-md .clr-wizard-stepnav-wrapper {
+  max-width: 0;
+  min-width: 0;
+}
+
+:host ::ng-deep .modal-title-text {
+  text-align: center;
+}
+
+.addition {
+  display: block;
+  min-width: 60px;
+}
+
+.addition-title {
+  /* margin-left: 1rem; */
+  /* margin-right: 5px; */
+  float: center;
+}
+
+.icon {
+  color: #60B515;
+  height: 23px;
+  width: 30px;
+  margin-right: 4px;
+}
