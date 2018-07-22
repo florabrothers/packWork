@@ -12,6 +12,7 @@ import { ProblemComponent } from './workbench/problems/problem/problem.component
 import { ClarityModule } from '@clr/angular';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SetsComponent } from './workbench/sets/sets.component';
+import { InputComponent } from './input/input.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { SetsComponent } from './workbench/sets/sets.component';
     WorkbenchComponent,
     CommunityComponent,
     ProblemComponent,
-    SetsComponent
+    SetsComponent,
+    InputComponent
   ],
   imports: [
     BrowserModule,

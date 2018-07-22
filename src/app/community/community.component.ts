@@ -23,7 +23,7 @@ export class CommunityComponent implements OnInit {
   @ViewChild('firstBlock') firstBlock: ClrStackBlock;
   @ViewChild('secondBlock') secondBlock: ClrStackBlock;
 
-  open: boolean = true;
+  open: boolean = false;
 
   public model = {
     content1: "old1",

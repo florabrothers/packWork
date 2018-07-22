@@ -13,8 +13,8 @@
       <div routerLink="/community" routerLinkActive #rlac="routerLinkActive" class="custom-tab active-colour-c">
         <a href="#fixed-tab-2" class="mdl-layout__tab" [ngClass]="rlac.isActive?'is-active':''">Community</a>
       </div>
-      <div class="custom-tab active-colour-t">
-        <a href="#fixed-tab-3" class="mdl-layout__tab">Tab 3</a>
+      <div routerLink="/input" routerLinkActive #rlai="routerLinkActive" class="custom-tab active-colour-t">
+        <a href="#fixed-tab-3" class="mdl-layout__tab" [ngClass]="rlai.isActive?'is-active':''">Testing area</a>
       </div>
     </div>
   </header>
