@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { KatexModule } from 'ng-katex';
 
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
@@ -29,7 +30,8 @@ import { InputComponent } from './input/input.component';
     AppRoutes,
     ClarityModule,
     BrowserAnimationsModule,
-    FormsModule
+    FormsModule,
+    KatexModule
   ],
   providers: [],
   bootstrap: [AppComponent]

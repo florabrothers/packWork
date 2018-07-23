@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InputComponent implements OnInit {
 
+  equation: string = '\\sum_{i=1}^nx_i';
+
   constructor() { }
 
   ngOnInit() {
