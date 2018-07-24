@@ -1,14 +1,18 @@
+.problem-grid {
+    padding: 10px 0 0 0;
+}
+
 .card_container {
     height: 350px;
 }
 
-.title_container {
-    height: 60px;
-}
-
-.info {
-    height: 200px;
+.content {
+    height: 50%;
     background-image: url('https://upload.wikimedia.org/wikipedia/commons/4/44/Gophercolor.jpg');
     background-repeat: no-repeat;
     background-size: contain;
+}
+
+.info {
+  height: 50%;
 }
