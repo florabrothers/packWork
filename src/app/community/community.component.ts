@@ -5,7 +5,7 @@ import { trigger, transition, animate, style } from '@angular/animations'
 @Component({
   selector: 'app-community',
   templateUrl: './community.component.html',
-  styleUrls: ['./community.component.css'],
+  styleUrls: ['./community.component.scss'],
   animations: [
     trigger('slideInOut', [
       transition(':enter', [
