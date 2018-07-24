@@ -13,7 +13,8 @@ import {
   MdcListModule,
   MdcThemeModule,
   MdcTypographyModule,
-  MdcElevationModule
+  MdcElevationModule, 
+  MdcFabModule
 } from '@angular-mdc/web';
 
 import { AppComponent } from './app.component';
@@ -56,7 +57,8 @@ import { InputComponent } from './input/input.component';
     MdcListModule,
     MdcThemeModule,
     MdcTypographyModule,
-    MdcElevationModule
+    MdcElevationModule,
+    MdcFabModule
   ],
   providers: [],
   bootstrap: [AppComponent]

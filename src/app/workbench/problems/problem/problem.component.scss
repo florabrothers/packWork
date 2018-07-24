@@ -4,6 +4,7 @@
 
 .card_container {
     height: 350px;
+    position: relative;
 }
 
 .content {
@@ -15,4 +16,16 @@
 
 .info {
   height: 50%;
+  background-color: grey;
+}
+
+.enter-fab {
+      position: absolute;
+      top: 43%;
+      left: 40%;
+
+}
+
+:host ::ng-deep .mdc-fab {
+    box-shadow: none;
 }
