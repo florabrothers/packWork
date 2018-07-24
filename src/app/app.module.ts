@@ -1,7 +1,19 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { KatexModule } from 'ng-katex';
+import {
+  MdcButtonModule,
+  MdcIconModule,
+  MdcCardModule,
+  MdcIconButtonModule,
+  MdcIconToggleModule,
+  MdcRippleModule,
+  MdcTextFieldModule,
+  MdcListModule,
+  MdcThemeModule,
+  MdcTypographyModule
+} from '@angular-mdc/web';
 
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
@@ -31,7 +43,18 @@ import { InputComponent } from './input/input.component';
     ClarityModule,
     BrowserAnimationsModule,
     FormsModule,
-    KatexModule
+    ReactiveFormsModule,
+    KatexModule,
+    MdcCardModule,
+    MdcButtonModule,
+    MdcIconModule,
+    MdcIconButtonModule,
+    MdcIconToggleModule,
+    MdcRippleModule,
+    MdcTextFieldModule,
+    MdcListModule,
+    MdcThemeModule,
+    MdcTypographyModule
   ],
   providers: [],
   bootstrap: [AppComponent]
