@@ -1,3 +1,6 @@
+@import '../../../common_scss/colour.scss';
+@import "~@angular-mdc/theme/material";
+
 .problem-grid {
     padding: 10px 0 0 0;
 }
@@ -9,23 +12,47 @@
 
 .content {
     height: 50%;
-    background-image: url('https://upload.wikimedia.org/wikipedia/commons/4/44/Gophercolor.jpg');
+    // background-image: url('https://upload.wikimedia.org/wikipedia/commons/4/44/Gophercolor.jpg');
     background-repeat: no-repeat;
     background-size: contain;
+    padding: 7px 7px 0 7px;
 }
 
 .info {
   height: 50%;
-  background-color: grey;
+  background-color: $grey;
 }
 
 .enter-fab {
       position: absolute;
-      top: 43%;
-      left: 40%;
-
+      margin: auto;
+      top: 50%;
+      bottom: 50%;
+      left: 25%;
+      right: 25%;
 }
 
-:host ::ng-deep .mdc-fab {
+:host ::ng-deep .mdc-fab,
+:host ::ng-deep .mdc-fab:focus,
+:host ::ng-deep .mdc-fab:hover, {
     box-shadow: none;
 }
+
+mdc-icon {
+  @include mdc-fab-ink-color($dark_grey);
+}
+
+// :host ::ng-deep .katex-display>.katex {
+//   display: inline-block;
+//   white-space: nowrap;
+//   max-width: 100%;
+//   overflow-x: scroll;
+//   text-align: initial;
+// }
+
+// :host ::ng-deep .katex {
+//   font: normal 1.21em KaTeX_Main, Times New Roman, serif;
+//   line-height: 1.2;
+//   white-space: normal;
+//   text-indent: 0;
+// }

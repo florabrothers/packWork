@@ -1,4 +1,5 @@
 @import '~katex/dist/katex.css';
-$mdc-theme-primary: grey;
-$mdc-theme-secondary: grey;
+@import './app/common_scss/colour.scss';
+$mdc-theme-primary: $grey;
+$mdc-theme-secondary: $grey;
 @import "~@angular-mdc/theme/material";

@@ -1,10 +1,10 @@
 <div class="mdc-layout-grid problem-grid">
   <div class="mdc-layout-grid__inner">
-    <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-3">
+    <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-2">
 
       <mdc-card class="card_container" [mdcElevation]="1">
         <div class="content">
-
+          <ng-katex [equation]="equation" [options]="options"></ng-katex>
         </div>
         <button mdc-fab class="enter-fab">
           <mdc-icon>edit</mdc-icon>
@@ -16,7 +16,7 @@
 
     </div>
 
-    <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-3"></div>
-    <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-3"></div>
+    <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-2"></div>
+    <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-2"></div>
   </div>
 </div>
