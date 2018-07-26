@@ -27,10 +27,15 @@
               "src/assets"
             ],
             "styles": [
+              "src/styles.scss",
+              "node_modules/bootstrap/dist/css/bootstrap.css",
+              "node_modules/open-iconic/font/css/open-iconic-bootstrap.css",
+              "node_modules/codemirror/lib/codemirror.css",
+              "node_modules/codemirror/theme/neo.css",
+              "node_modules/ngx-wall/scss/index.scss",
               "node_modules/material-design-lite/material.min.css",
               "node_modules/@clr/ui/clr-ui.min.css",
-              "node_modules/@clr/icons/clr-icons.min.css",
-              "src/styles.scss"
+              "node_modules/@clr/icons/clr-icons.min.css"
             ],
             "scripts": [
               "node_modules/material-design-lite/material.min.js",
