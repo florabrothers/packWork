@@ -13,9 +13,21 @@ import {
   MdcListModule,
   MdcThemeModule,
   MdcTypographyModule,
-  MdcElevationModule, 
+  MdcElevationModule,
   MdcFabModule
 } from '@angular-mdc/web';
+import {
+  CodeBrickModule,
+  DividerBrickModule,
+  HeaderBrickModule,
+  ImgBrickModule,
+  PickOutModule,
+  QuoteBrickModule,
+  TextBrickModule,
+  VideoBrickModule,
+  WallModule,
+  WebBookmarkBrickModule
+} from 'ngx-wall';
 
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
@@ -58,7 +70,17 @@ import { InputComponent } from './input/input.component';
     MdcThemeModule,
     MdcTypographyModule,
     MdcElevationModule,
-    MdcFabModule
+    MdcFabModule,
+    CodeBrickModule,
+    DividerBrickModule,
+    HeaderBrickModule,
+    ImgBrickModule,
+    PickOutModule,
+    QuoteBrickModule,
+    TextBrickModule,
+    VideoBrickModule,
+    WallModule,
+    WebBookmarkBrickModule
   ],
   providers: [],
   bootstrap: [AppComponent]

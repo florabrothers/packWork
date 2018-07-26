@@ -13,6 +13,7 @@
   "dependencies": {
     "@angular-mdc/web": "^0.37.2",
     "@angular/animations": "^6.0.3",
+    "@angular/cdk": "^6.4.1",
     "@angular/common": "^6.0.3",
     "@angular/compiler": "^6.0.3",
     "@angular/core": "^6.0.3",
@@ -26,10 +27,15 @@
     "@clr/ui": "^0.12.0-rc.2",
     "@webcomponents/custom-elements": "^1.0.0",
     "angular": "^1.7.2",
+    "bootstrap": "^4.1.3",
+    "codemirror": "^5.39.2",
     "core-js": "^2.5.4",
     "material-design-lite": "^1.3.0",
     "mathjax": "^2.7.5",
     "ng-katex": "^1.0.3",
+    "ngx-sticky-modal": "0.0.3",
+    "ngx-wall": "^1.1.16",
+    "open-iconic": "^1.1.1",
     "rxjs": "^6.0.0",
     "zone.js": "^0.8.26"
   },
