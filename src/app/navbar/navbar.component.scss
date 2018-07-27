@@ -1,7 +1,15 @@
+:host ::ng-deep .mdl-layout__container {
+  position: unset !important;
+}
+
 .mdl-layout__header {
     background-color: #4b4b4b;
     height: 37px;
     margin-bottom: 37px;
+}
+
+:host ::ng-deep .mdl-layout__header-row {
+  height: 47px;
 }
 
 .mdl-layout__tab {
@@ -54,7 +62,7 @@
 }
 
 :host ::ng-deep .mdl-layout__container {
-  max-height: 101px;
+  max-height: 84px;
   position: absolute;
   top: 0;
 }

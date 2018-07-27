@@ -16,18 +16,7 @@ import {
   MdcElevationModule,
   MdcFabModule
 } from '@angular-mdc/web';
-import {
-  CodeBrickModule,
-  DividerBrickModule,
-  HeaderBrickModule,
-  ImgBrickModule,
-  PickOutModule,
-  QuoteBrickModule,
-  TextBrickModule,
-  VideoBrickModule,
-  WallModule,
-  WebBookmarkBrickModule
-} from 'ngx-wall';
+import { FroalaEditorModule, FroalaViewModule } from 'angular-froala-wysiwyg';
 
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
@@ -71,16 +60,8 @@ import { InputComponent } from './input/input.component';
     MdcTypographyModule,
     MdcElevationModule,
     MdcFabModule,
-    CodeBrickModule,
-    DividerBrickModule,
-    HeaderBrickModule,
-    ImgBrickModule,
-    PickOutModule,
-    QuoteBrickModule,
-    TextBrickModule,
-    VideoBrickModule,
-    WallModule,
-    WebBookmarkBrickModule
+    FroalaEditorModule.forRoot(),
+    FroalaViewModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
