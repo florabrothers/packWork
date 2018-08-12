@@ -1,10 +1,16 @@
 <div class="frame">
 
-<div [froalaEditor]='options'>
-  Hello, Froala!
-</div>
+  <div [froalaEditor]='options' [(froalaModel)]="content">
 
-<br>
+  </div>
+
+  <br>
+
+  <div>
+    <p>
+      {{content}}
+    </p>
+  </div>
 
 <ng-katex [equation]="equation"></ng-katex>
 

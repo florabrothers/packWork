@@ -1,4 +1,5 @@
 import { Component, OnInit} from '@angular/core';
+declare var $: any;
 
 @Component({
   selector: 'app-input',
@@ -7,10 +8,15 @@ import { Component, OnInit} from '@angular/core';
 })
 export class InputComponent implements OnInit {
 
-  equation: string = '\\sum_{i=1}^nx_i';
-  test: string = 'test';
+  content: any;
+
+  equation = '\\sum_{i=1}^nx_i';
 
   public options: Object = {
+    toolbarButtons: ['bold', 'italic', 'underline', 'paragraphFormat', '|', 'undo', 'redo', '|', 'math'],
+    // toolbarButtonsXS: ['bold', 'italic', 'underline', 'paragraphFormat', 'alert'],
+    // toolbarButtonsSM: ['bold', 'italic', 'underline', 'paragraphFormat', 'alert'],
+    // toolbarButtonsMD: ['bold', 'italic', 'underline', 'paragraphFormat', 'alert'],
     placeholderText: 'Edit Your Content Here!',
     charCounterCount: false
   };
@@ -18,6 +24,17 @@ export class InputComponent implements OnInit {
   constructor() {}
 
   ngOnInit() {
+    $.FroalaEditor.DefineIcon('math', { NAME: '∫', template: 'text' });
+    $.FroalaEditor.RegisterCommand('math', {
+      title: 'Math',
+      focus: false,
+      undo: false,
+      refreshAfterCallback: false,
+
+      callback: function () {
+        this.html.set(`omg`);
+      }
+    });
   }
 
 }
